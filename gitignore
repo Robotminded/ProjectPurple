@@ -1,0 +1,20 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore archives
+*.zip
+*.tar.gz
+*.rar
+
+# Ignore temp files
+*.tmp
+*.log
+*.swp
+
+# Ignore node/npm cache (if used)
+node_modules/
+
+# Ignore build folders
+dist/
+build/
