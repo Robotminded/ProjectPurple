@@ -1,80 +1,69 @@
-# Project Purple — KDE Plasma Global Theme (v1.0)
+# Project Purple – KDE Global Theme
 
-**Minimal. Neon. Unmistakably Purple.**  
-A sleek, high-contrast KDE Plasma theme designed for developers and power users who love a futuristic yet simple desktop.
-
----
-
-## 📸 Preview
-![Project Purple Screenshot](screenshots/preview.png)
+Minimal. Neon. Unmistakably Purple.  
+A polished KDE Plasma Global Theme designed for a sleek, futuristic look with strong contrast, glowing accents, and a signature purple aesthetic.
 
 ---
 
 ## ✨ Features
-- **Full KDE Plasma Global Theme**
-- Matching **cursor pack** with hover glow
-- Minimal neon purple accents on a dark UI
-- **Rounded panels** for a modern touch
-- Custom **wallpaper** with subtle nebula details
-- **High-contrast** off-white text for readability
-- Lightweight & performance-friendly
+- **Complete KDE Global Theme** (colors, plasma style, window decorations, wallpaper)
+- **One-click install script** for easy setup
+- **Matching Aurorae window decoration** for a consistent look
+- **High-contrast color scheme** optimised for readability
+- **Custom wallpaper** included
+- Works with **KDE Plasma 5 & 6**
 
 ---
 
-## 📦 Installation (User Scope)
-
-```bash
-# 1. Unpack the theme into your local Plasma themes directory
-unzip ProjectPurple_GlobalTheme_v1_KPackage.zip -d ~/.local/share/plasma/look-and-feel/
-
-# 2. Rebuild Plasma’s theme cache
-kbuildsycoca6 --noincremental
-
-# 3. Apply the theme
-lookandfeeltool -a org.projectpurple
-
-# Optional: Build the custom cursor (first time only)
-sudo dnf install -y xcursorgen
-~/.local/share/plasma/look-and-feel/ProjectPurple/contents/cursors/ProjectPurpleCursor/build.sh
-```
-
-**Tip:** No system restart is required — just log out and back in.
+## 📸 Screenshots
+| Desktop | Window Decoration |
+|---------|-------------------|
+| ![Desktop Preview](screenshots/desktop.png) | ![Window Decoration](screenshots/decorations.png) |
 
 ---
 
-## 💾 Contents
-```
-ProjectPurple/
- ├── Global Theme (KPackage)
- ├── Cursor Pack
- ├── Wallpaper
- ├── Matching Color Scheme
- ├── README.md
-```
+## 📦 Installation
+1. **Download** the latest release ZIP from [Releases](../../releases/latest).
+2. **Extract** the ZIP file anywhere.
+3. **Open Terminal** in the extracted folder.
+4. Run:
+   ```bash
+   bash install.sh
+   ```
+5. Log out and log back in to ensure all changes apply.
 
 ---
 
-## 📥 Downloads
-- **Latest Release:** [GitHub Releases](https://github.com/YourUsername/ProjectPurple/releases)
-- **KDE Store:** *(coming soon)*
+## 🛠 Manual Installation (Advanced)
+- Copy `org.projectpurple` to:
+  ```
+  ~/.local/share/plasma/look-and-feel/
+  ```
+- Copy `ProjectPurple` (Aurorae) to:
+  ```
+  ~/.local/share/aurorae/themes/
+  ```
+- Copy the wallpaper to:
+  ```
+  ~/.local/share/wallpapers/
+  ```
+- Apply via **System Settings → Appearance**.
 
 ---
 
-## 💖 Support & Donations
-If you enjoy Project Purple and want to see updates & new features:  
-**PayPal:** [jones.lm89@gmail.com](mailto:jones.lm89@gmail.com)
-
----
-
-## 📝 Changelog
-### v1.0
-- Initial release
-- Global theme, cursor pack, and wallpaper
-- Rounded panel style
-- Minimal neon purple accent palette
+## 💡 Tips
+- After applying the theme, if **window decorations** do not update automatically, run:
+  ```bash
+  qdbus org.kde.KWin /KWin reconfigure
+  ```
 
 ---
 
 ## 📜 License
-This theme is released under the **GPL-3.0** license.  
-You are free to share and modify it under the same license.
+This project is licensed under the **GPL-3.0 License** – see [LICENSE](LICENSE) for details.
+
+---
+
+## 💖 Support Development
+If you enjoy Project Purple, consider supporting me via PayPal:  
+**[jones.lm89@gmail.com](mailto:jones.lm89@gmail.com)**
